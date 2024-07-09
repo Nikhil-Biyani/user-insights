@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h2>Movie List</h2>
+  <ul>
+    {% for movie in object_list %}
+      <li>{{ movie.movie_name }} - {{ movie.average_rating }}⭐</li>
+    {% endfor %}
+  </ul>
+{% endblock %} 
